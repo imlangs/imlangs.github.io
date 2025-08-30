@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato comigo através do formulário ou redes sociais">
+    <title>Meu Portfólio - Contato</title>
+    
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER COM NAVEGAÇÃO -->
+    <header>
+        <nav>
+            <!-- Logo/Nome do portfólio -->
+            <a href="index.html" class="logo">Meu Portfólio</a>
+            
+            <!-- Menu de navegação principal -->
+            <ul class="nav-links">
+                <li><a href="index.html">Sobre Mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO HERO DO CONTATO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Entre em Contato</h1>
+                    <p>Estou sempre aberto a novas oportunidades, colaborações e conversas interessantes. Vamos trabalhar juntos!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FORMULÁRIO E INFORMAÇÕES DE CONTATO -->
+        <section>
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- FORMULÁRIO DE CONTATO -->
+                    <div class="card">
+                        <h2 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">Envie uma Mensagem</h2>
+                        <p style="color: var(--text-light); margin-bottom: 2rem;">Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+                        
+                        <!-- Formulário com campos obrigatórios -->
+                        <form action="#" method="POST" style="width: 100%;">
+                            <!-- Campo Nome -->
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input 
+                                    type="text" 
+                                    id="nome" 
+                                    name="nome" 
+                                    required 
+                                    placeholder="Digite seu nome completo"
+                                    aria-describedby="nome-help"
+                                >
+                                <small id="nome-help" style="color: var(--text-light); font-size: 0.8rem;">Como você gostaria de ser chamado?</small>
+                            </div>
+                            
+                            <!-- Campo Email -->
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required 
+                                    placeholder="seu.email@exemplo.com"
+                                    aria-describedby="email-help"
+                                >
+                                <small id="email-help" style="color: var(--text-light); font-size: 0.8rem;">Seu e-mail não será compartilhado com terceiros</small>
+                            </div>
+                            
+                            <!-- Campo Assunto (opcional) -->
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input 
+                                    type="text" 
+                                    id="assunto" 
+                                    name="assunto" 
+                                    placeholder="Sobre o que você gostaria de falar?"
+                                >
+                            </div>
+                            
+                            <!-- Campo Mensagem -->
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem *</label>
+                                <textarea 
+                                    id="mensagem" 
+                                    name="mensagem" 
+                                    required 
+                                    placeholder="Escreva sua mensagem aqui..."
+                                    aria-describedby="mensagem-help"
+                                ></textarea>
+                                <small id="mensagem-help" style="color: var(--text-light); font-size: 0.8rem;">Conte-me sobre seu projeto, dúvida ou proposta</small>
+                            </div>
+                            
+                            <!-- Botão de envio -->
+                            <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">
+                                Enviar Mensagem
+                            </button>
+                            
+                            <!-- Nota sobre o formulário -->
+                            <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; text-align: center;">
+                                * Campos obrigatórios. Respondo normalmente em até 24 horas.
+                            </p>
+                        </form>
+                    </div>
+                    
+                    <!-- INFORMAÇÕES DE CONTATO -->
+                    <div>
+                        <!-- Card com informações pessoais -->
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h3 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">Informações de Contato</h3>
+                            
+                            <!-- E-mail -->
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="font-size: 1.5rem; margin-right: 1rem; color: var(--secondary-color);">📧</div>
+                                <div>
+                                    <p style="font-weight: 500; margin-bottom: 0.2rem;">E-mail</p>
+                                    <p style="color: var(--text-light);">imlangsdorfff@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Telefone -->
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="font-size: 1.5rem; margin-right: 1rem; color: var(--secondary-color);">📱</div>
+                                <div>
+                                    <p style="font-weight: 500; margin-bottom: 0.2rem;">Telefone</p>
+                                    <p style="color: var(--text-light);">(62) 98426-7541</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Localização -->
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="font-size: 1.5rem; margin-right: 1rem; color: var(--secondary-color);">📍</div>
+                                <div>
+                                    <p style="font-weight: 500; margin-bottom: 0.2rem;">Localização</p>
+                                    <p style="color: var(--text-light);">Goiânia, Goiás - Brasil</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Disponibilidade -->
+                            <div style="display: flex; align-items: center;">
+                                <div style="font-size: 1.5rem; margin-right: 1rem; color: var(--secondary-color);">⏰</div>
+                                <div>
+                                    <p style="font-weight: 500; margin-bottom: 0.2rem;">Disponibilidade</p>
+                                    <p style="color: var(--text-light);">Segunda a Sexta, 9h às 18h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card com redes sociais -->
+                        <div class="card">
+                            <h3 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1.5rem;">Redes Sociais</h3>
+                            <p style="color: var(--text-light); margin-bottom: 1.5rem;">Conecte-se comigo nas redes sociais para acompanhar meus projetos e novidades.</p>
+                            
+                            <!-- Links das redes sociais -->
+                            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                <!-- LinkedIn -->
+                                <a href="#" style="display: flex; align-items: center; text-decoration: none; color: var(--text-dark); transition: var(--transition); padding: 0.5rem; border-radius: var(--border-radius); border: 1px solid #e2e8f0;">
+                                    <div style="font-size: 1.5rem; margin-right: 1rem; color: #0077b5;">💼</div>
+                                    <div>
+                                        <p style="font-weight: 500; margin-bottom: 0.2rem;">LinkedIn</p                                        <p style="color: var(--text-light); font-size: 0.9rem;">linkedin.com/in/isabelle-langsdorff/</p>
+                                    </a>div>
+                                </a>
+                                
+                                <!-- GitHub -->
+                                <a href="#" style="display: flex; align-items: center; text-decoration: none; color: var(--text-dark); transition: var(--transition); padding: 0.5rem; border-radius: var(--border-radius); border: 1px solid #e2e8f0;">
+                                    <div style="font-size: 1.5rem; margin-right: 1rem; color: #333;">💻</div>
+                                    <div>
+                                        <p style="font-weight: 500; margin-bottom: 0.2rem;">GitHub</p>
+                                        <p style="color: var(--text-light); font-size: 0.9rem;">github.com/isalangsdorff</p>
+                                    </div>
+                                </a>
+                                
+                                <!-- Instagram -->
+                                <a href="#" style="display: flex; align-items: center; text-decoration: none; color: var(--text-dark); transition: var(--transition); padding: 0.5rem; border-radius: var(--border-radius); border: 1px solid #e2e8f0;">
+                                    <div style="font-size: 1.5rem; margin-right: 1rem; color: #e4405f;">📷</div>
+                                    <div>
+                                        <p style="font-weight: 500; margin-bottom: 0.2rem;">Instagram</p>
+                                        <p style="color: var(--text-light); font-size: 0.9rem;">@isalangsdorff</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CALL TO ACTION -->
+        <section style="background-color: var(--background-light);">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                <p class="section-subtitle">Estou sempre em busca de novos desafios e oportunidades de crescimento. Se você tem um projeto interessante ou uma oportunidade de trabalho, adoraria conversar!</p>
+                
+                <!-- Botões de ação -->
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="portfolio.html" class="btn">Ver Meu Portfólio</a>
+                    <a href="formacao.html" class="btn-outline">Conhecer Minha Formação</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FAQ -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                
+                <div class="grid grid-2">
+                    <!-- FAQ 1 -->
+                    <div class="card">
+                        <h3 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Quanto tempo leva para responder?</h3>
+                        <p>Normalmente respondo a todas as mensagens em até 24 horas durante dias úteis. Em casos urgentes, pode ser mais rápido!</p>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="card">
+                        <h3 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Que tipo de projetos aceito?</h3>
+                        <p>Estou interessado em projetos de desenvolvimento web, desde sites institucionais até aplicações mais complexas. Adoro desafios!</p>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="card">
+                        <h3 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Trabalho remotamente?</h3>
+                        <p>Sim! Tenho experiência com trabalho remoto e possuo todas as ferramentas necessárias para colaboração online eficiente.</p>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="card">
+                        <h3 style="color: var(--primary-color); font-family: 'Poppins', sans-serif; margin-bottom: 1rem;">Ofereço consultoria?</h3>
+                        <p>Posso ajudar com consultoria em desenvolvimento web, revisão de código e orientação em projetos. Entre em contato para conversarmos!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+            <p>Desenvolvido com HTML5 e CSS3</p>
+        </div>
+    </footer>
+
+    <!-- Script simples para validação do formulário -->
+    <script>
+        // Validação básica do formulário
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Previne o envio real do formulário
+            
+            // Obtém os valores dos campos
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+            
+            // Validações básicas
+            if (!nome) {
+                alert('Por favor, preencha seu nome.');
+                document.getElementById('nome').focus();
+                return;
+            }
+            
+            if (!email) {
+                alert('Por favor, preencha seu e-mail.');
+                document.getElementById('email').focus();
+                return;
+            }
+            
+            if (!mensagem) {
+                alert('Por favor, escreva uma mensagem.');
+                document.getElementById('mensagem').focus();
+                return;
+            }
+            
+            // Simulação de envio bem-sucedido
+            alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
+            
+            // Limpa o formulário
+            this.reset();
+        });
+        
+        // Adiciona efeitos visuais aos links das redes sociais
+        document.querySelectorAll('a[href="#"]').forEach(link => {
+            if (link.style.display === 'flex') { // Links das redes sociais
+                link.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = 'var(--background-light)';
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                link.addEventListener('mouseleave', function() {
+                    this.style.backgroundColor = 'transparent';
+                    this.style.transform = 'translateY(0)';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
